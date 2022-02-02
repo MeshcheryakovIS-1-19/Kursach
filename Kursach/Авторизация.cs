@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Kursach
 {
-    public partial class Form1 : Form
+    public partial class Авторизация : Form
     {
-        public Form1()
+        public Авторизация()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
