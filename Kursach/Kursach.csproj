@@ -132,6 +132,9 @@
     <EmbeddedResource Include="Заказ.resx">
       <DependentUpon>Заказ.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Каталог.resx">
+      <DependentUpon>Каталог.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Корзина.resx">
       <DependentUpon>Корзина.cs</DependentUpon>
     </EmbeddedResource>
