@@ -63,6 +63,16 @@ namespace Kursach.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1614723743_86_p_foni_dlya_odezhdi_108 {
+            get {
+                object obj = ResourceManager.GetObject("1614723743_86-p-foni-dlya-odezhdi-108", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _36_8 {
             get {
                 object obj = ResourceManager.GetObject("36-8", resourceCulture);

@@ -21,5 +21,15 @@ namespace Kursach
         {
 
         }
+
+        private void Авторизация_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
