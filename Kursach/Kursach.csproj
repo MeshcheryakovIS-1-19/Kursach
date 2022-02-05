@@ -162,5 +162,8 @@
   <ItemGroup>
     <None Include="Resources\1614723743_86-p-foni-dlya-odezhdi-108.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-862521.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
