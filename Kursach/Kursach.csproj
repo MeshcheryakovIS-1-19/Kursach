@@ -138,6 +138,9 @@
     <EmbeddedResource Include="Мужская одежда.resx">
       <DependentUpon>Мужская одежда.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Профиль.resx">
+      <DependentUpon>Профиль.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Регистрация.resx">
       <DependentUpon>Регистрация.cs</DependentUpon>
     </EmbeddedResource>
