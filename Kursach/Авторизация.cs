@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Kursach
 {
     public partial class Авторизация : Form
@@ -28,6 +29,11 @@ namespace Kursach
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
 
         }

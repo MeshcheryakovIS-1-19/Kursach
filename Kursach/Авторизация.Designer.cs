@@ -81,13 +81,14 @@ namespace Kursach
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.IndicateFocus = true;
-            this.guna2Button1.Location = new System.Drawing.Point(151, 276);
+            this.guna2Button1.Location = new System.Drawing.Point(151, 279);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(140, 33);
             this.guna2Button1.TabIndex = 7;
             this.guna2Button1.Text = "Войти";
             this.guna2Button1.UseTransparentBackground = true;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2Button2
             // 
@@ -108,7 +109,7 @@ namespace Kursach
             this.guna2Button2.ForeColor = System.Drawing.Color.Black;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
             this.guna2Button2.IndicateFocus = true;
-            this.guna2Button2.Location = new System.Drawing.Point(151, 352);
+            this.guna2Button2.Location = new System.Drawing.Point(151, 344);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(140, 33);
@@ -178,7 +179,7 @@ namespace Kursach
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Stencil", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(187, -4);
+            this.label3.Location = new System.Drawing.Point(228, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(311, 76);
             this.label3.TabIndex = 11;
@@ -191,7 +192,7 @@ namespace Kursach
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.BackgroundImage = global::Kursach.Properties.Resources._1614723743_86_p_foni_dlya_odezhdi_108;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(481, 441);
+            this.ClientSize = new System.Drawing.Size(596, 505);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.guna2TextBox2);
             this.Controls.Add(this.guna2TextBox1);

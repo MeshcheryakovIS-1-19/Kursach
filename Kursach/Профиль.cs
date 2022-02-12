@@ -21,5 +21,10 @@ namespace Kursach
         {
 
         }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -29,6 +29,7 @@ namespace Kursach
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Профиль));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -84,6 +85,7 @@ namespace Kursach
             this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
             this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
             this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton1.ImageRotate = 0F;
             this.guna2ImageButton1.Location = new System.Drawing.Point(14, 30);
@@ -94,6 +96,7 @@ namespace Kursach
             this.guna2ImageButton1.ShadowDecoration.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Size = new System.Drawing.Size(224, 201);
             this.guna2ImageButton1.TabIndex = 4;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // label4
             // 
@@ -143,7 +146,7 @@ namespace Kursach
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.BackgroundImage = global::Kursach.Properties.Resources._1614723743_86_p_foni_dlya_odezhdi_108;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(526, 495);
+            this.ClientSize = new System.Drawing.Size(574, 495);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);

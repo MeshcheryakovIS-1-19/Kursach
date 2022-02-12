@@ -122,6 +122,7 @@ namespace Kursach
             this.guna2Button1.TabIndex = 8;
             this.guna2Button1.Text = "Зарегистрироваться";
             this.guna2Button1.UseTransparentBackground = true;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // label4
             // 
@@ -141,7 +142,7 @@ namespace Kursach
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.BackgroundImage = global::Kursach.Properties.Resources._1614723743_86_p_foni_dlya_odezhdi_108;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(546, 486);
+            this.ClientSize = new System.Drawing.Size(570, 486);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.label3);
@@ -152,6 +153,7 @@ namespace Kursach
             this.Controls.Add(this.textBox1);
             this.Name = "Регистрация";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Регистрация_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
