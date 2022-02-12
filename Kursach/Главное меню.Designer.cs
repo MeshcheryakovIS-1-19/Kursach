@@ -115,6 +115,7 @@ namespace Kursach
             this.guna2Button3.TabIndex = 6;
             this.guna2Button3.Text = "Корзина";
             this.guna2Button3.UseTransparentBackground = true;
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // label3
             // 
