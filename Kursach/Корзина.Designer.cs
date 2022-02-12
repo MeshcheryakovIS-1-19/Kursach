@@ -56,14 +56,14 @@ namespace Kursach
             // 
             this.textBox1.Location = new System.Drawing.Point(159, 73);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(90, 20);
+            this.textBox1.Size = new System.Drawing.Size(174, 20);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(159, 122);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(90, 20);
+            this.textBox2.Size = new System.Drawing.Size(174, 20);
             this.textBox2.TabIndex = 2;
             // 
             // label1
@@ -107,7 +107,7 @@ namespace Kursach
             // 
             this.textBox3.Location = new System.Drawing.Point(159, 166);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(90, 20);
+            this.textBox3.Size = new System.Drawing.Size(174, 20);
             this.textBox3.TabIndex = 7;
             // 
             // label4

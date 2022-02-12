@@ -92,6 +92,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Большие размеры.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Большие размеры.Designer.cs">
+      <DependentUpon>Большие размеры.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Для детей.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Для детей.Designer.cs">
+      <DependentUpon>Для детей.cs</DependentUpon>
+    </Compile>
     <Compile Include="Заказ.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,8 +173,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Большие размеры.resx">
+      <DependentUpon>Большие размеры.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Главное меню.resx">
       <DependentUpon>Главное меню.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Для детей.resx">
+      <DependentUpon>Для детей.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Женская одежда.resx">
       <DependentUpon>Женская одежда.cs</DependentUpon>

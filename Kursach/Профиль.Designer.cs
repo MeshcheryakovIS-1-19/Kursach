@@ -29,7 +29,6 @@ namespace Kursach
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Профиль));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -85,9 +84,10 @@ namespace Kursach
             this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
             this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
+            this.guna2ImageButton1.Image = global::Kursach.Properties.Resources.image_862521;
             this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(220, 220);
             this.guna2ImageButton1.Location = new System.Drawing.Point(14, 30);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Horizontal;
@@ -157,6 +157,7 @@ namespace Kursach
             this.Controls.Add(this.label1);
             this.Name = "Профиль";
             this.Text = "Профиль";
+            this.Load += new System.EventHandler(this.Профиль_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

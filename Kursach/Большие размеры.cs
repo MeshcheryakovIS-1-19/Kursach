@@ -10,24 +10,24 @@ using System.Windows.Forms;
 
 namespace Kursach
 {
-    public partial class Профиль : Form
+    public partial class Большие_размеры : Form
     {
-        public Профиль()
+        public Большие_размеры()
         {
             InitializeComponent();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void guna2CustomGradientPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        private void guna2RatingStar1_ValueChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void Профиль_Load(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
