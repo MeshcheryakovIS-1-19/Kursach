@@ -39,7 +39,7 @@ namespace Kursach
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(351, 0);
+            this.dataGridView1.Location = new System.Drawing.Point(339, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(449, 450);
             this.dataGridView1.TabIndex = 0;
@@ -73,12 +73,13 @@ namespace Kursach
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Kursach.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 374);
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Image = global::Kursach.Properties.Resources.download__7_;
+            this.pictureBox1.Location = new System.Drawing.Point(-2, 386);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(345, 88);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.Size = new System.Drawing.Size(335, 67);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
             // Большие_размеры
