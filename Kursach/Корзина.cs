@@ -21,5 +21,10 @@ namespace Kursach
         {
 
         }
+
+        private void Корзина_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

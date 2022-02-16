@@ -226,5 +226,8 @@
   <ItemGroup>
     <None Include="Resources\image-862521.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
