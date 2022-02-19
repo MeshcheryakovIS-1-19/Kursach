@@ -157,6 +157,7 @@ namespace Kursach
             this.guna2Button1.TabIndex = 10;
             this.guna2Button1.Text = "Оплатить";
             this.guna2Button1.UseTransparentBackground = true;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // pictureBox1
             // 
