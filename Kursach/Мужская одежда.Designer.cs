@@ -59,7 +59,7 @@ namespace Kursach
             this.guna2Button1.Animated = true;
             this.guna2Button1.AutoRoundedCorners = true;
             this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 34;
+            this.guna2Button1.BorderRadius = 31;
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
             this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -72,10 +72,10 @@ namespace Kursach
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.IndicateFocus = true;
-            this.guna2Button1.Location = new System.Drawing.Point(63, 306);
+            this.guna2Button1.Location = new System.Drawing.Point(168, 320);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(222, 70);
+            this.guna2Button1.Size = new System.Drawing.Size(181, 65);
             this.guna2Button1.TabIndex = 13;
             this.guna2Button1.Text = "Добавить в корзину";
             this.guna2Button1.UseTransparentBackground = true;
@@ -179,7 +179,7 @@ namespace Kursach
             this.guna2Button5.ForeColor = System.Drawing.Color.Black;
             this.guna2Button5.HoverState.Parent = this.guna2Button5;
             this.guna2Button5.IndicateFocus = true;
-            this.guna2Button5.Location = new System.Drawing.Point(102, 266);
+            this.guna2Button5.Location = new System.Drawing.Point(2, 351);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
             this.guna2Button5.Size = new System.Drawing.Size(160, 34);

@@ -57,7 +57,7 @@ namespace Kursach
             this.guna2Button1.Animated = true;
             this.guna2Button1.AutoRoundedCorners = true;
             this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 26;
+            this.guna2Button1.BorderRadius = 25;
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
             this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -70,10 +70,10 @@ namespace Kursach
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.IndicateFocus = true;
-            this.guna2Button1.Location = new System.Drawing.Point(111, 325);
+            this.guna2Button1.Location = new System.Drawing.Point(152, 328);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(196, 55);
+            this.guna2Button1.Size = new System.Drawing.Size(181, 52);
             this.guna2Button1.TabIndex = 1;
             this.guna2Button1.Text = "Добавить в корзину";
             this.guna2Button1.UseTransparentBackground = true;
@@ -177,10 +177,10 @@ namespace Kursach
             this.guna2Button5.ForeColor = System.Drawing.Color.Black;
             this.guna2Button5.HoverState.Parent = this.guna2Button5;
             this.guna2Button5.IndicateFocus = true;
-            this.guna2Button5.Location = new System.Drawing.Point(12, 285);
+            this.guna2Button5.Location = new System.Drawing.Point(-2, 346);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
-            this.guna2Button5.Size = new System.Drawing.Size(160, 34);
+            this.guna2Button5.Size = new System.Drawing.Size(148, 34);
             this.guna2Button5.TabIndex = 24;
             this.guna2Button5.Text = "Назад";
             this.guna2Button5.UseTransparentBackground = true;
