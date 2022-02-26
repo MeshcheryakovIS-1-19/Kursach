@@ -21,5 +21,17 @@ namespace Kursach
         {
 
         }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form4 Form4 = new Form4();
+            Form4.Show();
+        }
     }
 }

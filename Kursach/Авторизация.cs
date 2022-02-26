@@ -30,12 +30,16 @@ namespace Kursach
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-
+            Hide();
+            Регистрация Регистрация = new Регистрация();
+            Регистрация.ShowDialog();
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-
+            Hide();
+            Form4 Form4 = new Form4();
+            Form4.ShowDialog();
         }
     }
 }

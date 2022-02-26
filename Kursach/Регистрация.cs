@@ -18,21 +18,11 @@ namespace Kursach
             InitializeComponent();
         }
 
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Регистрация_Load(object sender, EventArgs e)
-        {
-
-
-        }
-
         private void guna2Button1_Click(object sender, EventArgs e)
         {
- 
+            Hide();
+            Form4 Form4 = new Form4();
+            Form4.ShowDialog();
         }
     }
 }

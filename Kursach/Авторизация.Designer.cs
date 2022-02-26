@@ -186,7 +186,7 @@ namespace Kursach
             this.pictureBox1.Image = global::Kursach.Properties.Resources.download__7_;
             this.pictureBox1.Location = new System.Drawing.Point(25, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(527, 141);
+            this.pictureBox1.Size = new System.Drawing.Size(572, 155);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
@@ -198,7 +198,7 @@ namespace Kursach
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.BackgroundImage = global::Kursach.Properties.Resources._1614723743_86_p_foni_dlya_odezhdi_108;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(596, 505);
+            this.ClientSize = new System.Drawing.Size(623, 505);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.guna2TextBox2);
             this.Controls.Add(this.guna2TextBox1);
