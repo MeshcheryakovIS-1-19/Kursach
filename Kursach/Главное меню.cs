@@ -26,7 +26,24 @@ namespace Kursach
 
         private void Form4_Load(object sender, EventArgs e)
         {
-
+            // Сокрытие текущей формы
+            Hide();
+            // Инициализируем и вызываем форму диалога авторизации
+            var Auth_Form = new Авторизация();
+            // Вызов формы в режиме диалога
+            Auth_Form.ShowDialog();
+            // Если авторизации была успешна и в поле класса хранится истина, то делаем движуху:
+            if (Classes.Auth.auth)
+            {
+                // Отображаем рабочую форму
+                Show();
+            }
+            // иначе
+            else
+            {
+                // Закрываем форму
+                Close();
+            }
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)

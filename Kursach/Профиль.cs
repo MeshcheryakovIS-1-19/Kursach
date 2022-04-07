@@ -29,8 +29,9 @@ namespace Kursach
 
         private void Профиль_Load(object sender, EventArgs e)
         {
-
+            label4.Text = Classes.Auth.auth_fio;
         }
+        
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
