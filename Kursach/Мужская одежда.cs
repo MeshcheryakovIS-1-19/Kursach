@@ -33,10 +33,6 @@ namespace Kursach
         //что бы в БД не отправлялся null
         string id_selected_rows = "0";
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-           
-        }
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
