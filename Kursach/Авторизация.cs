@@ -37,18 +37,14 @@ namespace Kursach
                 // элементы массива [] - это значения столбцов из запроса SELECT
                 Classes.Auth.auth_id = reader[0].ToString();
                 Classes.Auth.auth_fio = reader[2].ToString();
-                Classes.Auth.auth_role = reader[3].ToString();
-                Classes.Auth.auth_phone = reader[4].ToString();
+                Classes.Auth.auth_doljnost = reader[3].ToString();
+                Classes.Auth.auth_email = reader[4].ToString();
             }
             reader.Close(); // закрываем reader
             // закрываем соединение с БД
             Classes.DBConn.conn.Close();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void Авторизация_Load(object sender, EventArgs e)
         {
@@ -108,7 +104,7 @@ namespace Kursach
 
         private void Авторизация_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Environment.Exit(0)
+            Environment.Exit(0);
         }
     }
 }

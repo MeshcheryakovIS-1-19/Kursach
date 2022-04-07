@@ -10,8 +10,8 @@
         public static string auth_id = null;
         //Статичное поле, которое хранит значения ФИО пользователя
         public static string auth_fio = null;
-        public static string auth_phone = null;
+        public static string auth_email = null;
         //Статичное поле, которое хранит количество привелегий пользователя
-        public static string auth_role = null;
+        public static string auth_doljnost = null;
     }
 }

@@ -51,7 +51,6 @@ namespace Kursach
             this.label1.Size = new System.Drawing.Size(60, 24);
             this.label1.TabIndex = 5;
             this.label1.Text = "Логин";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
