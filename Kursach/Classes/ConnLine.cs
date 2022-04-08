@@ -4,7 +4,7 @@
     {
         #region строка подключения
         //Определяем параметры подключения
-        private const string host = "chuc.caseum.ru";
+        private const string host = "10.90.12.113";
         private const string port = "33333";
         private const string database = "is_1_19_st12_KURS";
         private const string username = "st_1_19_12";
