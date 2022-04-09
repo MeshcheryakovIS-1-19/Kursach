@@ -1,12 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Kursach
@@ -81,7 +75,7 @@ namespace Kursach
                 "theme_kurs AS 'Тема курсовой', id_state AS 'Статус' FROM t_stud");
 
         }
-    
+
 
         private void Большие_размеры_Load(object sender, EventArgs e)
         {
@@ -89,7 +83,7 @@ namespace Kursach
             dataGridView1.DataSource = Classes.DBConn.GetListUsers("SELECT id AS 'Код', fio AS 'ФИО', age AS 'Возраст', " +
                 "theme_kurs AS 'Тема курсовой', id_state AS 'Статус' FROM t_stud");
 
-     
+
             //Видимость полей в гриде
             dataGridView1.Columns[0].Visible = true;
             dataGridView1.Columns[1].Visible = true;

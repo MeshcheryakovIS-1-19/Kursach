@@ -1,7 +1,7 @@
 ﻿
 namespace Kursach
 {
-    partial class Form4
+    partial class Главное_меню
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Kursach
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Главное_меню));
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
@@ -54,7 +54,7 @@ namespace Kursach
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.IndicateFocus = true;
             this.guna2Button1.Location = new System.Drawing.Point(95, 160);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(240, 55);
             this.guna2Button1.TabIndex = 4;
@@ -77,7 +77,7 @@ namespace Kursach
             this.guna2Button2.ForeColor = System.Drawing.Color.Black;
             this.guna2Button2.IndicateFocus = true;
             this.guna2Button2.Location = new System.Drawing.Point(591, 160);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(240, 55);
             this.guna2Button2.TabIndex = 5;
@@ -100,7 +100,7 @@ namespace Kursach
             this.guna2Button3.ForeColor = System.Drawing.Color.Black;
             this.guna2Button3.IndicateFocus = true;
             this.guna2Button3.Location = new System.Drawing.Point(343, 160);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(240, 55);
             this.guna2Button3.TabIndex = 6;
@@ -114,7 +114,7 @@ namespace Kursach
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Image = global::Kursach.Properties.Resources.download__7_;
             this.pictureBox2.Location = new System.Drawing.Point(95, -1);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(703, 154);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -137,7 +137,7 @@ namespace Kursach
             this.guna2Button4.ForeColor = System.Drawing.Color.Black;
             this.guna2Button4.IndicateFocus = true;
             this.guna2Button4.Location = new System.Drawing.Point(343, 250);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.Size = new System.Drawing.Size(240, 55);
             this.guna2Button4.TabIndex = 16;
@@ -145,7 +145,7 @@ namespace Kursach
             this.guna2Button4.UseTransparentBackground = true;
             this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
-            // Form4
+            // Главное_меню
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -158,8 +158,8 @@ namespace Kursach
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Form4";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "Главное_меню";
             this.Text = resources.GetString("$this.Text");
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

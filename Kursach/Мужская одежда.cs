@@ -1,12 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Kursach
@@ -89,26 +83,26 @@ namespace Kursach
                 GetSelectedIDString();
             }
         }
-            public void GetSelectedIDString()
-            {
-                //Переменная для индекс выбранной строки в гриде
-                string index_selected_rows;
-                //Индекс выбранной строки
-                index_selected_rows = dataGridView1.SelectedCells[0].RowIndex.ToString();
-                //ID конкретной записи в Базе данных, на основании индекса строки
-                id_selected_rows = dataGridView1.Rows[Convert.ToInt32(index_selected_rows)].Cells[0].Value.ToString();
+        public void GetSelectedIDString()
+        {
+            //Переменная для индекс выбранной строки в гриде
+            string index_selected_rows;
+            //Индекс выбранной строки
+            index_selected_rows = dataGridView1.SelectedCells[0].RowIndex.ToString();
+            //ID конкретной записи в Базе данных, на основании индекса строки
+            id_selected_rows = dataGridView1.Rows[Convert.ToInt32(index_selected_rows)].Cells[0].Value.ToString();
 
-            }
-            //Метод обновления DataGreed
-            public void reload_list()
-            {
+        }
+        //Метод обновления DataGreed
+        public void reload_list()
+        {
 
-                //Чистим виртуальную таблицу
-                table.Clear();
-                //Вызываем метод получения записей, который вновь заполнит таблицу
-                dataGridView1.DataSource = Classes.DBConn.GetListUsers("SELECT id AS 'Код', fio AS 'ФИО', age AS 'Возраст', " +
-                    "theme_kurs AS 'Тема курсовой', id_state AS 'Статус' FROM t_stud");
+            //Чистим виртуальную таблицу
+            table.Clear();
+            //Вызываем метод получения записей, который вновь заполнит таблицу
+            dataGridView1.DataSource = Classes.DBConn.GetListUsers("SELECT id AS 'Код', fio AS 'ФИО', age AS 'Возраст', " +
+                "theme_kurs AS 'Тема курсовой', id_state AS 'Статус' FROM t_stud");
 
-            }
         }
     }
+}

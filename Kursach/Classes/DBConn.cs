@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace Kursach.Classes
 {
-    internal class DBConn 
+    internal class DBConn
     {
         //Объявляем и инициализируем соединение
         public static readonly MySqlConnection conn = new MySqlConnection(ConnLine.connString);
@@ -21,7 +21,7 @@ namespace Kursach.Classes
             table = new DataTable();
             bSource = new BindingSource();
             // устанавливаем соединение с БД
-             conn.Open();
+            conn.Open();
             //Объявляем команду, которая выполнит запрос в соединении conn
             MyDA.SelectCommand = new MySqlCommand(commandStr, conn);
             //Заполняем таблицу записями из БД

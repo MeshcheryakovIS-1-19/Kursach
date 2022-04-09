@@ -1,18 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Kursach
 {
-    public partial class Form4 : Form
+    public partial class Главное_меню : Form
     {
-        public Form4()
+        public Главное_меню()
         {
             InitializeComponent();
         }
@@ -24,14 +17,10 @@ namespace Kursach
             Профиль.ShowDialog();
         }
 
+        public static Главное_меню главное_Меню = new Главное_меню();
+
         private void Form4_Load(object sender, EventArgs e)
         {
-            // Сокрытие текущей формы
-            Hide();
-            // Инициализируем и вызываем форму диалога авторизации
-            var Auth_Form = new Авторизация();
-            // Вызов формы в режиме диалога
-            Auth_Form.ShowDialog();
             // Если авторизации была успешна и в поле класса хранится истина, то делаем движуху:
             if (Classes.Auth.auth)
             {

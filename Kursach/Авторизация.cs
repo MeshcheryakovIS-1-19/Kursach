@@ -14,12 +14,12 @@ namespace Kursach
         }
 
         //Метод запроса данных пользователя по логину для запоминания их в полях класса
-        public void GetUserInfo(string login_user)
+        public void GetUserInfo(string login)
         {
             // устанавливаем соединение с БД
             Classes.DBConn.conn.Open();
             // запрос
-            var sql = $"SELECT * FROM Staff WHERE login='{login_user}'";
+            var sql = $"SELECT * FROM Staff WHERE login='{login}'";
             // объект для выполнения SQL-запроса
             var command = new MySqlCommand(sql, Classes.DBConn.conn);
             // объект для чтения ответа сервера
@@ -32,10 +32,12 @@ namespace Kursach
                 Classes.Auth.auth_fio = reader[2].ToString();
                 Classes.Auth.auth_doljnost = reader[3].ToString();
                 Classes.Auth.auth_email = reader[4].ToString();
+                
             }
             reader.Close(); // закрываем reader
             // закрываем соединение с БД
             Classes.DBConn.conn.Close();
+            Classes.Auth.auth = true;
         }
 
 
@@ -52,7 +54,7 @@ namespace Kursach
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             //Запрос в БД на предмет того, если ли строка с подходящим логином и паролем
-            var sql = "SELECT * FROM Staff WHERE login = @un and  pass= @up";
+            var sql = "SELECT * FROM Staff WHERE login = @un and  password= @up";
             //Открытие соединения
             Classes.DBConn.conn.Open();
             //Объявляем таблицу
@@ -65,8 +67,8 @@ namespace Kursach
             command.Parameters.Add("@un", MySqlDbType.VarChar, 25);
             command.Parameters.Add("@up", MySqlDbType.VarChar, 25);
             //Присваиваем параметрам значение
-            command.Parameters["@un"].Value = guna2TextBox1.Text;
-            command.Parameters["@up"].Value = Classes.Encryption.Sha256(guna2TextBox2.Text);
+            command.Parameters["@un"].Value = login.Text;
+            command.Parameters["@up"].Value = Classes.Encryption.Sha256(password.Text);
             //Заносим команду в адаптер
             adapter.SelectCommand = command;
             //Заполняем таблицу
@@ -79,30 +81,27 @@ namespace Kursach
                 //Присваеваем глобальный признак авторизации
                 Classes.Auth.auth = true;
                 //Достаем данные пользователя в случае успеха
-                GetUserInfo(guna2TextBox1.Text);
-                //Вызов формы в режиме диалога
-                Close();
-
+                GetUserInfo(login.Text);
+                Hide();
+                Главное_меню ме = new Главное_меню();
+                ме.ShowDialog();
             }
             else
             {
                 //Отобразить сообщение о том, что авторизаия неуспешна
                 MessageBox.Show("Неверные данные авторизации");
-
             }
-            Hide();
-            Form4 Form4 = new Form4();
-            Form4.ShowDialog();
+            
+
         }
 
         private void Авторизация_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Environment.Exit(0);
+            if (!Classes.Auth.auth)
+            {
+                Environment.Exit(0);
+            }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
