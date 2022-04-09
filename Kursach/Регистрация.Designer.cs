@@ -85,7 +85,7 @@ namespace Kursach
             this.guna2Button1.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.IndicateFocus = true;
-            this.guna2Button1.Location = new System.Drawing.Point(263, 432);
+            this.guna2Button1.Location = new System.Drawing.Point(278, 408);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(221, 48);
@@ -99,7 +99,7 @@ namespace Kursach
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = global::Kursach.Properties.Resources.download__7_;
-            this.pictureBox1.Location = new System.Drawing.Point(-11, 478);
+            this.pictureBox1.Location = new System.Drawing.Point(-14, 498);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(485, 137);
@@ -312,6 +312,7 @@ namespace Kursach
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Регистрация";
             this.Text = "m";
+            this.Load += new System.EventHandler(this.Регистрация_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -1,13 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -26,7 +19,7 @@ namespace Kursach
             // устанавливаем соединение с БД
             Classes.DBConn.conn.Open();
             // запрос
-            var sql = $"SELECT * FROM Staff WHERE Login='{login_user}'";
+            var sql = $"SELECT * FROM Staff WHERE login='{login_user}'";
             // объект для выполнения SQL-запроса
             var command = new MySqlCommand(sql, Classes.DBConn.conn);
             // объект для чтения ответа сервера
@@ -59,7 +52,7 @@ namespace Kursach
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             //Запрос в БД на предмет того, если ли строка с подходящим логином и паролем
-            var sql = "SELECT * FROM Staff WHERE Login = @un and  Pass= @up";
+            var sql = "SELECT * FROM Staff WHERE login = @un and  pass= @up";
             //Открытие соединения
             Classes.DBConn.conn.Open();
             //Объявляем таблицу
@@ -89,7 +82,7 @@ namespace Kursach
                 GetUserInfo(guna2TextBox1.Text);
                 //Вызов формы в режиме диалога
                 Close();
-               
+
             }
             else
             {
@@ -105,6 +98,11 @@ namespace Kursach
         private void Авторизация_FormClosing(object sender, FormClosingEventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

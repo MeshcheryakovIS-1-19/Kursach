@@ -21,7 +21,7 @@ namespace Kursach.Classes
             table = new DataTable();
             bSource = new BindingSource();
             // устанавливаем соединение с БД
-            conn.Open();
+             conn.Open();
             //Объявляем команду, которая выполнит запрос в соединении conn
             MyDA.SelectCommand = new MySqlCommand(commandStr, conn);
             //Заполняем таблицу записями из БД
