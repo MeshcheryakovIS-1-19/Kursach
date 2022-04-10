@@ -11,7 +11,7 @@ namespace Kursach
         {
             InitializeComponent();
         }
-        public static string request = "SELECT id3 AS 'Код товара', name3 AS 'Наименование товара', number_tovar3 AS 'Номер товара', price3 AS 'Цена товара', kolichestvo3 AS 'Количество тоавара' FROM woman_odejda";
+        public static string request = "SELECT id5 AS 'Код товара', name5 AS 'Наименование товара', number_tovar5 AS 'Номер товара', price5 AS 'Цена товара', kolichestvo5 AS 'Количество тоавара' FROM man_odejda";
         //Переменная для ID записи в БД, выбранной в гриде. Пока она не содержит значения, лучше его инициализировать с 0
         //что бы в БД не отправлялся null
         public static string id_selected_rows = "0";
@@ -106,15 +106,13 @@ namespace Kursach
             }
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            Classes.DBConn.DeleteUser("DELETE FROM man_odejda WHERE id5='", id_selected_rows);
-            Reload();
-        }
+      
+           
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-
+            Classes.DBConn.DeleteUser("DELETE FROM man_odejda WHERE id5='", id_selected_rows);
+            Reload();
         }
     }
 }

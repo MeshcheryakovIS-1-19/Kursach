@@ -235,5 +235,8 @@
   <ItemGroup>
     <None Include="Resources\439a9e5c07288be3b98d4ac8b1c092a5b2c68964_hq.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LAJGL_EzFnQ.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

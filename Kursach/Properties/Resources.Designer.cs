@@ -19,7 +19,7 @@ namespace Kursach.Properties {
     // с помощью такого средства, как ResGen или Visual Studio.
     // Чтобы добавить или удалить член, измените файл .ResX и снова запустите ResGen
     // с параметром /str или перестройте свой проект VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -176,6 +176,16 @@ namespace Kursach.Properties {
         internal static System.Drawing.Bitmap image_862521 {
             get {
                 object obj = ResourceManager.GetObject("image-862521", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LAJGL_EzFnQ {
+            get {
+                object obj = ResourceManager.GetObject("LAJGL_EzFnQ", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
