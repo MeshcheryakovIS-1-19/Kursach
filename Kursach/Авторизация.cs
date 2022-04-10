@@ -28,10 +28,10 @@ namespace Kursach
             while (reader.Read())
             {
                 // элементы массива [] - это значения столбцов из запроса SELECT
-                Classes.Auth.auth_id = reader[0].ToString();
-                Classes.Auth.auth_fio = reader[2].ToString();
-                Classes.Auth.auth_doljnost = reader[3].ToString();
-                Classes.Auth.auth_email = reader[4].ToString();
+                Classes.Auth.auth_id = reader[2].ToString();
+                Classes.Auth.auth_fio = reader[3].ToString();
+                Classes.Auth.auth_doljnost = reader[4].ToString();
+                Classes.Auth.auth_email = reader[5].ToString();
                 
             }
             reader.Close(); // закрываем reader

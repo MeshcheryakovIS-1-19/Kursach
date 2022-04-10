@@ -39,9 +39,9 @@ namespace Kursach
             this.label4 = new System.Windows.Forms.Label();
             this.fio = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.doljnost = new Guna.UI2.WinForms.Guna2TextBox();
             this.email = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.doljnost = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -227,30 +227,6 @@ namespace Kursach
             this.guna2TextBox4.Size = new System.Drawing.Size(244, 38);
             this.guna2TextBox4.TabIndex = 20;
             // 
-            // doljnost
-            // 
-            this.doljnost.Animated = true;
-            this.doljnost.AutoRoundedCorners = true;
-            this.doljnost.BackColor = System.Drawing.Color.Transparent;
-            this.doljnost.BorderRadius = 18;
-            this.doljnost.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.doljnost.DefaultText = "";
-            this.doljnost.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.doljnost.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.doljnost.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.doljnost.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.doljnost.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.doljnost.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.doljnost.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.doljnost.Location = new System.Drawing.Point(263, 273);
-            this.doljnost.Margin = new System.Windows.Forms.Padding(4);
-            this.doljnost.Name = "doljnost";
-            this.doljnost.PasswordChar = '\0';
-            this.doljnost.PlaceholderText = "";
-            this.doljnost.SelectedText = "";
-            this.doljnost.Size = new System.Drawing.Size(244, 38);
-            this.doljnost.TabIndex = 21;
-            // 
             // email
             // 
             this.email.Animated = true;
@@ -288,6 +264,28 @@ namespace Kursach
             this.label5.TabIndex = 23;
             this.label5.Text = "Email";
             // 
+            // doljnost
+            // 
+            this.doljnost.AutoRoundedCorners = true;
+            this.doljnost.BackColor = System.Drawing.Color.Transparent;
+            this.doljnost.BorderRadius = 17;
+            this.doljnost.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.doljnost.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.doljnost.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.doljnost.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.doljnost.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.doljnost.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.doljnost.ItemHeight = 30;
+            this.doljnost.Items.AddRange(new object[] {
+            "Директор",
+            "Администратор",
+            "Кассир",
+            "Консультант"});
+            this.doljnost.Location = new System.Drawing.Point(265, 272);
+            this.doljnost.Name = "doljnost";
+            this.doljnost.Size = new System.Drawing.Size(243, 36);
+            this.doljnost.TabIndex = 24;
+            // 
             // Регистрация
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -296,9 +294,9 @@ namespace Kursach
             this.BackgroundImage = global::Kursach.Properties.Resources._1614723743_86_p_foni_dlya_odezhdi_108;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(795, 624);
+            this.Controls.Add(this.doljnost);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.email);
-            this.Controls.Add(this.doljnost);
             this.Controls.Add(this.guna2TextBox4);
             this.Controls.Add(this.fio);
             this.Controls.Add(this.label4);
@@ -330,8 +328,8 @@ namespace Kursach
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2TextBox fio;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
-        private Guna.UI2.WinForms.Guna2TextBox doljnost;
         private Guna.UI2.WinForms.Guna2TextBox email;
         private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2ComboBox doljnost;
     }
 }
