@@ -20,7 +20,7 @@ namespace Kursach
             Classes.DBConn.conn.Open();
             // запрос
             var sql = $"SELECT * FROM Staff WHERE login='{login}'";
-            // объект для выполнения SQL-запроса
+            // объект для выполнения SQL-запроса 
             var command = new MySqlCommand(sql, Classes.DBConn.conn);
             // объект для чтения ответа сервера
             var reader = command.ExecuteReader();
