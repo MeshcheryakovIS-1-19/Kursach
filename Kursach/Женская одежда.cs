@@ -11,13 +11,58 @@ namespace Kursach
         {
             InitializeComponent();
         }
-        
+        public static string request = "SELECT id3 AS 'Код товара', name3 AS 'Наименование товара', number_tovar3 AS 'Номер товара', price3 AS 'Цена товара', kolichestvo3 AS 'Количество тоавара' FROM woman_odejda";
+        //Переменная для ID записи в БД, выбранной в гриде. Пока она не содержит значения, лучше его инициализировать с 0
+        //что бы в БД не отправлялся null
+        public static string id_selected_rows = "0";
+
 
 
 
         private void Form3_Load(object sender, EventArgs e)
         {
-         
+            dataGridView1.DataSource = Classes.DBConn.GetListUsers(request);
+            //Видимость полей в гриде
+            for (int i = 0; i < dataGridView1.Columns.Count; i++)
+            {
+                dataGridView1.Columns[i].Visible = true;
+            }
+            //Ширина полей
+            dataGridView1.Columns[0].FillWeight = 30;
+            dataGridView1.Columns[1].FillWeight = 30;
+            dataGridView1.Columns[2].FillWeight = 30;
+            dataGridView1.Columns[3].FillWeight = 30;
+            dataGridView1.Columns[4].FillWeight = 30;
+            //Режим для полей "Только для чтения"
+            for (int i = 0; i < dataGridView1.Columns.Count; i++)
+            {
+                dataGridView1.Columns[i].ReadOnly = true;
+            }
+            //Растягивание полей грида
+            for (int i = 0; i < dataGridView1.Columns.Count; i++)
+            {
+                dataGridView1.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            }
+            //Убираем заголовки строк
+            dataGridView1.RowHeadersVisible = false;
+            //Показываем заголовки столбцов
+            dataGridView1.ColumnHeadersVisible = true;
+    }
+        public void Reload()
+        {
+            //Чистим виртуальную таблицу внутри класса
+            Classes.DBConn.ReloadList();
+            //Вызываем метод получения записей, который вновь заполнит таблицу
+            dataGridView1.DataSource = Classes.DBConn.GetListUsers(request);
+        }
+        public void GetSelectedIDString()
+        {
+            //Переменная для индекс выбранной строки в гриде
+            string index_selected_rows;
+            //Индекс выбранной строки
+            index_selected_rows = dataGridView1.SelectedCells[0].RowIndex.ToString();
+            //ID конкретной записи в Базе данных, на основании индекса строки
+            id_selected_rows = dataGridView1.Rows[Convert.ToInt32(index_selected_rows)].Cells[0].Value.ToString();
         }
 
         private void guna2Button5_Click(object sender, EventArgs e)
@@ -38,22 +83,35 @@ namespace Kursach
                 GetSelectedIDString();
             }
         }
-        public void GetSelectedIDString()
-        {
-            
 
+        private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (!e.RowIndex.Equals(-1) && dataGridView1.CurrentCell != null)
+            {
+                //Магические строки
+                dataGridView1.CurrentCell = dataGridView1[e.ColumnIndex, e.RowIndex];
+                dataGridView1.CurrentRow.Selected = true;
+                //Метод получения ID выделенной строки в глобальную переменную
+                GetSelectedIDString();
+            }
         }
-        //Метод обновления DataGreed
-        public void re
-        load_list()
+
+        private void guna2Button2_Click(object sender, EventArgs e)
         {
 
-            //Чистим виртуальную таблицу
-            table.Clear();
-            //Вызываем метод получения записей, который вновь заполнит таблицу
-            dataGridView1.DataSource = Classes.DBConn.GetListUsers("SELECT id AS 'Код', fio AS 'ФИО', age AS 'Возраст', " +
-                "theme_kurs AS 'Тема курсовой', id_state AS 'Статус' FROM t_stud");
+            string sql_update_current_stud = $"INSERT INTO woman_odejda (name3, number_tovar3, price3, kolichestvo3) " +
+                                            $"VALUES ('{naimenovanie.Text}', '{nomerTovara.Text}', '{price.Text}', '{kolichestvo.Text}')";
+            // устанавливаем соединение с БД
+            Classes.DBConn.conn.Open();
+            // объект для выполнения SQL-запроса
+            MySqlCommand command = new MySqlCommand(sql_update_current_stud, Classes.DBConn.conn);
+            // выполняем запрос
+            command.ExecuteNonQuery();
+            // закрываем подключение к БД
+            Classes.DBConn.conn.Close();
+            //Закрываем форму
 
+            Reload();
         }
     }
 }

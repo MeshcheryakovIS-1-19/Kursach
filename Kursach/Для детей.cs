@@ -17,8 +17,10 @@ namespace Kursach
         public static string id_selected_rows = "0";
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-            
-        }
+            this.Close();
+            Каталог Каталог = new Каталог();
+            Каталог.Show();
+    }
 
         private void Для_детей_Load(object sender, EventArgs e)
         {
