@@ -31,8 +31,8 @@ namespace Kursach
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             this.Close();
-            Главное_меню Form4 = new Главное_меню();
-            Form4.Show();
+            Главное_меню Главное_меню = new Главное_меню();
+            Главное_меню.Show();
         }
     }
 }

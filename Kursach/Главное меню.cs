@@ -38,15 +38,8 @@ namespace Kursach
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             Hide();
-            Каталог Каталог = new Каталог();
-            Каталог.ShowDialog();
-        }
-
-        private void guna2Button3_Click(object sender, EventArgs e)
-        {
-            Hide();
-            Корзина Корзина = new Корзина();
-            Корзина.ShowDialog();
+            Большие_размеры Большие_размеры = new Большие_размеры();
+            Большие_размеры.Show();
         }
 
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
@@ -59,6 +52,25 @@ namespace Kursach
 
         }
 
-       
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Для_детей Для_детей = new Для_детей();
+            Для_детей.Show();
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Form2 Form2 = new Form2();
+            Form2.Show();
+        }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Form3 Form3 = new Form3();
+            Form3.Show();
+        }
     }
 }

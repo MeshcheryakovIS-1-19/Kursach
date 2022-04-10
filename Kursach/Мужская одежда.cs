@@ -21,8 +21,8 @@ namespace Kursach
         private void guna2Button5_Click(object sender, EventArgs e)
         {
             this.Close();
-            Каталог Каталог = new Каталог();
-            Каталог.Show();
+            Главное_меню Главное_меню = new Главное_меню();
+            Главное_меню.Show();
         }
 
         private void Form2_Load(object sender, EventArgs e)

@@ -116,12 +116,6 @@
     <Compile Include="Для детей.Designer.cs">
       <DependentUpon>Для детей.cs</DependentUpon>
     </Compile>
-    <Compile Include="Корзина.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Корзина.Designer.cs">
-      <DependentUpon>Корзина.cs</DependentUpon>
-    </Compile>
     <Compile Include="Профиль.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,12 +145,6 @@
     </Compile>
     <Compile Include="Главное меню.Designer.cs">
       <DependentUpon>Главное меню.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Каталог.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Каталог.Designer.cs">
-      <DependentUpon>Каталог.cs</DependentUpon>
     </Compile>
     <Compile Include="Авторизация.cs">
       <SubType>Form</SubType>
@@ -190,12 +178,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Женская одежда.resx">
       <DependentUpon>Женская одежда.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Каталог.resx">
-      <DependentUpon>Каталог.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Корзина.resx">
-      <DependentUpon>Корзина.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Мужская одежда.resx">
       <DependentUpon>Мужская одежда.cs</DependentUpon>
