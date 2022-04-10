@@ -73,10 +73,10 @@ namespace Kursach
             this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button1.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.Font = new System.Drawing.Font("Sylfaen", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.Font = new System.Drawing.Font("Sylfaen", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.IndicateFocus = true;
-            this.guna2Button1.Location = new System.Drawing.Point(84, 311);
+            this.guna2Button1.Location = new System.Drawing.Point(79, 329);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(241, 45);
@@ -303,6 +303,7 @@ namespace Kursach
             this.guna2Button3.TabIndex = 42;
             this.guna2Button3.Text = "Удалить";
             this.guna2Button3.UseTransparentBackground = true;
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // Form2
             // 

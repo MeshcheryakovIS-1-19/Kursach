@@ -111,5 +111,10 @@ namespace Kursach
             Classes.DBConn.DeleteUser("DELETE FROM man_odejda WHERE id5='", id_selected_rows);
             Reload();
         }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
