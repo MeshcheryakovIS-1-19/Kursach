@@ -100,7 +100,7 @@ namespace Kursach
 
         }
 
-        private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)   
         {
 
             if (!e.RowIndex.Equals(-1) && dataGridView1.CurrentCell != null)
