@@ -11,7 +11,7 @@ namespace Kursach
         {
             InitializeComponent();
         }
-        public static string request = "SELECT id AS 'name', number_tovars AS 'price', kolischestvo FROM dlya_detei";
+        public static string request = "SELECT id AS 'Код товара', name AS 'Наименование товара', number_tovars AS 'Номер товара', price AS 'Цена товара', kolischestvo AS 'Количество тоавара' FROM dlya_detei ";
         //Переменная для ID записи в БД, выбранной в гриде. Пока она не содержит значения, лучше его инициализировать с 0
         //что бы в БД не отправлялся null
         public static string id_selected_rows = "0";
@@ -29,9 +29,11 @@ namespace Kursach
                 dataGridView1.Columns[i].Visible = true;
             }
             //Ширина полей
-            dataGridView1.Columns[0].FillWeight = 5;
-            dataGridView1.Columns[1].FillWeight = 40;
-            dataGridView1.Columns[2].FillWeight = 10;
+            dataGridView1.Columns[0].FillWeight = 30;
+            dataGridView1.Columns[1].FillWeight = 30;
+            dataGridView1.Columns[2].FillWeight = 30;
+            dataGridView1.Columns[3].FillWeight = 30;
+            dataGridView1.Columns[4].FillWeight = 30;
             //Режим для полей "Только для чтения"
             for (int i = 0; i < dataGridView1.Columns.Count; i++)
             {
@@ -87,5 +89,32 @@ namespace Kursach
                 GetSelectedIDString();
             }
         }
+
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+
+            string sql_update_current_stud = $"INSERT INTO dlya_detei (name, number_tovars, price, kolischestvo) " +
+                                            $"VALUES ('{naimenovanie.Text}', '{nomerTovara.Text}', '{price.Text}', '{kolichestvo.Text}')";
+            // устанавливаем соединение с БД
+            Classes.DBConn.conn.Open();
+            // объект для выполнения SQL-запроса
+            MySqlCommand command = new MySqlCommand(sql_update_current_stud, Classes.DBConn.conn);
+            // выполняем запрос
+            command.ExecuteNonQuery();
+            // закрываем подключение к БД
+            Classes.DBConn.conn.Close();
+            //Закрываем форму
+
+            Reload();
+ 
+        }
+
+
     }
 }

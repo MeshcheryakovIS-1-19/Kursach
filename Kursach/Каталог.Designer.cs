@@ -29,6 +29,7 @@ namespace Kursach
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Каталог));
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
@@ -52,7 +53,7 @@ namespace Kursach
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.Location = new System.Drawing.Point(265, 239);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(219, 49);
             this.guna2Button1.TabIndex = 4;
@@ -75,7 +76,7 @@ namespace Kursach
             this.guna2Button2.ForeColor = System.Drawing.Color.Black;
             this.guna2Button2.IndicateFocus = true;
             this.guna2Button2.Location = new System.Drawing.Point(523, 113);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(219, 49);
             this.guna2Button2.TabIndex = 5;
@@ -98,7 +99,7 @@ namespace Kursach
             this.guna2Button3.ForeColor = System.Drawing.Color.Black;
             this.guna2Button3.IndicateFocus = true;
             this.guna2Button3.Location = new System.Drawing.Point(35, 113);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(219, 49);
             this.guna2Button3.TabIndex = 6;
@@ -121,7 +122,7 @@ namespace Kursach
             this.guna2Button4.ForeColor = System.Drawing.Color.Black;
             this.guna2Button4.IndicateFocus = true;
             this.guna2Button4.Location = new System.Drawing.Point(738, 236);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.Size = new System.Drawing.Size(219, 52);
             this.guna2Button4.TabIndex = 7;
@@ -135,7 +136,7 @@ namespace Kursach
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = global::Kursach.Properties.Resources.download__7_;
             this.pictureBox1.Location = new System.Drawing.Point(-28, 420);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(677, 156);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -157,7 +158,7 @@ namespace Kursach
             this.guna2Button5.ForeColor = System.Drawing.Color.Black;
             this.guna2Button5.IndicateFocus = true;
             this.guna2Button5.Location = new System.Drawing.Point(841, 499);
-            this.guna2Button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button5.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.Size = new System.Drawing.Size(213, 42);
             this.guna2Button5.TabIndex = 16;
@@ -179,9 +180,11 @@ namespace Kursach
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Каталог";
-            this.Text = "Form6";
+            this.Text = "Каталог";
+            this.Load += new System.EventHandler(this.Каталог_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

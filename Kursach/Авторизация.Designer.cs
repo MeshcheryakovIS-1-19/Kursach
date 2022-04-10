@@ -29,6 +29,7 @@ namespace Kursach
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Авторизация));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
@@ -194,9 +195,10 @@ namespace Kursach
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Авторизация";
-            this.Text = "Form1";
+            this.Text = "Авторизация";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Авторизация_FormClosing);
             this.Load += new System.EventHandler(this.Авторизация_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

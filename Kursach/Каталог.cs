@@ -44,5 +44,10 @@ namespace Kursach
             Большие_размеры Большие_размеры = new Большие_размеры();
             Большие_размеры.Show();
         }
+
+        private void Каталог_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
