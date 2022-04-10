@@ -116,12 +116,6 @@
     <Compile Include="Для детей.Designer.cs">
       <DependentUpon>Для детей.cs</DependentUpon>
     </Compile>
-    <Compile Include="Заказ.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Заказ.Designer.cs">
-      <DependentUpon>Заказ.cs</DependentUpon>
-    </Compile>
     <Compile Include="Корзина.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,9 +190,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Женская одежда.resx">
       <DependentUpon>Женская одежда.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Заказ.resx">
-      <DependentUpon>Заказ.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Каталог.resx">
       <DependentUpon>Каталог.cs</DependentUpon>

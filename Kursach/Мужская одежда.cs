@@ -89,15 +89,7 @@ namespace Kursach
         {
             string sql_update_current_stud = $"INSERT INTO man_odejda (name5, number_tovar5, price5, kolichestvo5) " +
                                             $"VALUES ('{naimenovanie.Text}', '{nomerTovara.Text}', '{price.Text}', '{kolichestvo.Text}')";
-            // устанавливаем соединение с БД
-            Classes.DBConn.conn.Open();
-            // объект для выполнения SQL-запроса
-            MySqlCommand command = new MySqlCommand(sql_update_current_stud, Classes.DBConn.conn);
-            // выполняем запрос
-            command.ExecuteNonQuery();
-            // закрываем подключение к БД
-            Classes.DBConn.conn.Close();
-            //Закрываем форму
+            Classes.DBConn.NewRecord(sql_update_current_stud);
 
             Reload();
         }
@@ -112,6 +104,12 @@ namespace Kursach
                 //Метод получения ID выделенной строки в глобальную переменную
                 GetSelectedIDString();
             }
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Classes.DBConn.DeleteUser("DELETE FROM man_odejda WHERE id5='", id_selected_rows);
+            Reload();
         }
     }
 }

@@ -59,11 +59,6 @@ namespace Kursach
 
         }
 
-        private void guna2Button4_Click(object sender, EventArgs e)
-        {
-            Hide();
-            Заказ Заказ = new Заказ();
-            Заказ.ShowDialog();
-        }
+       
     }
 }

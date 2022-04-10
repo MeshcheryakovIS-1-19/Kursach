@@ -43,6 +43,7 @@ namespace Kursach
             this.price = new Guna.UI2.WinForms.Guna2TextBox();
             this.nomerTovara = new Guna.UI2.WinForms.Guna2TextBox();
             this.naimenovanie = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -74,7 +75,7 @@ namespace Kursach
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.IndicateFocus = true;
-            this.guna2Button1.Location = new System.Drawing.Point(89, 284);
+            this.guna2Button1.Location = new System.Drawing.Point(92, 321);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(241, 64);
@@ -109,7 +110,7 @@ namespace Kursach
             this.guna2Button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.guna2Button5.ForeColor = System.Drawing.Color.Black;
             this.guna2Button5.IndicateFocus = true;
-            this.guna2Button5.Location = new System.Drawing.Point(113, 393);
+            this.guna2Button5.Location = new System.Drawing.Point(113, 412);
             this.guna2Button5.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.Size = new System.Drawing.Size(197, 42);
@@ -280,6 +281,28 @@ namespace Kursach
             this.naimenovanie.Size = new System.Drawing.Size(171, 31);
             this.naimenovanie.TabIndex = 33;
             // 
+            // guna2Button3
+            // 
+            this.guna2Button3.Animated = true;
+            this.guna2Button3.AutoRoundedCorners = true;
+            this.guna2Button3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button3.BorderRadius = 15;
+            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button3.FillColor = System.Drawing.Color.White;
+            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button3.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button3.IndicateFocus = true;
+            this.guna2Button3.Location = new System.Drawing.Point(170, 262);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.Size = new System.Drawing.Size(140, 32);
+            this.guna2Button3.TabIndex = 42;
+            this.guna2Button3.Text = "Удалить";
+            this.guna2Button3.UseTransparentBackground = true;
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
+            // 
             // Большие_размеры
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -287,6 +310,7 @@ namespace Kursach
             this.BackgroundImage = global::Kursach.Properties.Resources._1614723743_86_p_foni_dlya_odezhdi_108;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -327,5 +351,6 @@ namespace Kursach
         private Guna.UI2.WinForms.Guna2TextBox price;
         private Guna.UI2.WinForms.Guna2TextBox nomerTovara;
         private Guna.UI2.WinForms.Guna2TextBox naimenovanie;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
     }
 }

@@ -103,20 +103,18 @@ namespace Kursach
 
             string sql_update_current_stud = $"INSERT INTO dlya_detei (name, number_tovars, price, kolischestvo) " +
                                             $"VALUES ('{naimenovanie.Text}', '{nomerTovara.Text}', '{price.Text}', '{kolichestvo.Text}')";
-            // устанавливаем соединение с БД
-            Classes.DBConn.conn.Open();
-            // объект для выполнения SQL-запроса
-            MySqlCommand command = new MySqlCommand(sql_update_current_stud, Classes.DBConn.conn);
-            // выполняем запрос
-            command.ExecuteNonQuery();
-            // закрываем подключение к БД
-            Classes.DBConn.conn.Close();
-            //Закрываем форму
+
+            Classes.DBConn.NewRecord(sql_update_current_stud);
 
             Reload();
  
         }
 
-
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            Classes.DBConn.DeleteUser("DELETE FROM dlya_detei WHERE id='", id_selected_rows);
+            Reload();
+        }
+        
     }
 }

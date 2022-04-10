@@ -143,7 +143,6 @@ namespace Kursach
             this.guna2Button4.TabIndex = 16;
             this.guna2Button4.Text = "Заказ";
             this.guna2Button4.UseTransparentBackground = true;
-            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // Главное_меню
             // 
