@@ -74,7 +74,7 @@ namespace Kursach.Classes
         {
             if (textBox != "")
             {
-                bSource.Filter = "ID =" + textBox;
+                bSource.Filter = "id =" + textBox;
             }
             else
             {
