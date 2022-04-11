@@ -45,7 +45,7 @@ namespace Kursach
         }
 
 
-        private void Регистрация_Load(object sender, EventArgs e)
+        private void Регистрация_Load(object sender, EventArgs e) 
         {
 
         }
