@@ -33,11 +33,7 @@ namespace Kursach
             dataGridView1.Columns[2].FillWeight = 30;
             dataGridView1.Columns[3].FillWeight = 30;
             dataGridView1.Columns[4].FillWeight = 30;
-            //Режим для полей "Только для чтения"
-            for (int i = 0; i < dataGridView1.Columns.Count; i++)
-            {
-                dataGridView1.Columns[i].ReadOnly = true;
-            }
+            
             //Растягивание полей грида
             for (int i = 0; i < dataGridView1.Columns.Count; i++)
             {
@@ -109,6 +105,21 @@ namespace Kursach
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             Classes.DBConn.DeleteUser("DELETE FROM woman_odejda WHERE id3='", id_selected_rows);
+            Reload();
+        }
+
+        private void dataGridView1_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            // устанавливаем соединение с БД
+            Classes.DBConn.conn.Open();
+            // запрос обновления данных
+            string query2 = $"UPDATE man_odejda SET name5='{dataGridView1[1, dataGridView1.CurrentRow.Index].Value}', number_tovar5='{dataGridView1[2, dataGridView1.CurrentRow.Index].Value}', price5='{dataGridView1[3, dataGridView1.CurrentRow.Index].Value}', kolichestvo5='{dataGridView1[4, dataGridView1.CurrentRow.Index].Value}' WHERE id5='{dataGridView1.Rows[Convert.ToInt32(dataGridView1.SelectedCells[0].RowIndex.ToString())].Cells[0].Value}'";
+            // объект для выполнения SQL-запроса
+            MySqlCommand command = new MySqlCommand(query2, Classes.DBConn.conn);
+            // выполняем запрос
+            command.ExecuteNonQuery();
+            // закрываем подключение к БД
+            Classes.DBConn.conn.Close();
             Reload();
         }
     }

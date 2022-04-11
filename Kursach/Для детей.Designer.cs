@@ -49,16 +49,14 @@ namespace Kursach
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.Color.White;
-            this.dataGridView1.Location = new System.Drawing.Point(440, -2);
+            this.dataGridView1.Location = new System.Drawing.Point(452, -4);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(728, 650);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.Size = new System.Drawing.Size(617, 561);
+            this.dataGridView1.TabIndex = 26;
+            this.dataGridView1.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEndEdit);
             this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
             this.dataGridView1.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseDown);
             // 
@@ -67,7 +65,7 @@ namespace Kursach
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = global::Kursach.Properties.Resources.download__7_;
-            this.pictureBox1.Location = new System.Drawing.Point(-17, 544);
+            this.pictureBox1.Location = new System.Drawing.Point(2, 450);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(416, 85);
@@ -89,7 +87,7 @@ namespace Kursach
             this.guna2Button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.guna2Button5.ForeColor = System.Drawing.Color.Black;
             this.guna2Button5.IndicateFocus = true;
-            this.guna2Button5.Location = new System.Drawing.Point(128, 460);
+            this.guna2Button5.Location = new System.Drawing.Point(139, 372);
             this.guna2Button5.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.Size = new System.Drawing.Size(213, 42);
@@ -288,7 +286,7 @@ namespace Kursach
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Kursach.Properties.Resources._1614723743_86_p_foni_dlya_odezhdi_108;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1162, 642);
+            this.ClientSize = new System.Drawing.Size(1055, 555);
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
