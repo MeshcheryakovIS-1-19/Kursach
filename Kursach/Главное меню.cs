@@ -72,5 +72,12 @@ namespace Kursach
             Form3 Form3 = new Form3();
             Form3.Show();
         }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Сотрудники Сотрудники = new Сотрудники();
+            Сотрудники.Show();
+        }
     }
 }

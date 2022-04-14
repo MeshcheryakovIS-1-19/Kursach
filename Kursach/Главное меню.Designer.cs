@@ -36,6 +36,7 @@ namespace Kursach
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -168,6 +169,29 @@ namespace Kursach
             this.guna2Button6.UseTransparentBackground = true;
             this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click);
             // 
+            // guna2Button3
+            // 
+            this.guna2Button3.Animated = true;
+            this.guna2Button3.AutoRoundedCorners = true;
+            this.guna2Button3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button3.BorderRadius = 26;
+            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button3.FillColor = System.Drawing.Color.White;
+            this.guna2Button3.Font = new System.Drawing.Font("Bernard MT Condensed", 12F);
+            this.guna2Button3.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button3.IndicateFocus = true;
+            this.guna2Button3.Location = new System.Drawing.Point(192, 449);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.Size = new System.Drawing.Size(240, 55);
+            this.guna2Button3.TabIndex = 20;
+            this.guna2Button3.Text = "Сотрудники";
+            this.guna2Button3.UseTransparentBackground = true;
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
+            // 
             // Главное_меню
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -176,6 +200,7 @@ namespace Kursach
             this.BackgroundImage = global::Kursach.Properties.Resources._1614723743_86_p_foni_dlya_odezhdi_108;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(895, 554);
+            this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2Button6);
             this.Controls.Add(this.guna2Button5);
             this.Controls.Add(this.guna2Button4);
@@ -200,5 +225,6 @@ namespace Kursach
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
     }
 }
