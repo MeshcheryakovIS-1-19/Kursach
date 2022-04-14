@@ -114,7 +114,7 @@ namespace Kursach
             // устанавливаем соединение с БД
             Classes.DBConn.conn.Open();
             // запрос обновления данных
-            string query2 = $"UPDATE man_odejda SET name5='{dataGridView1[1, dataGridView1.CurrentRow.Index].Value}', number_tovar5='{dataGridView1[2, dataGridView1.CurrentRow.Index].Value}', price5='{dataGridView1[3, dataGridView1.CurrentRow.Index].Value}', kolichestvo5='{dataGridView1[4, dataGridView1.CurrentRow.Index].Value}', number_tovar5='{dataGridView1[5, dataGridView1.CurrentRow.Index].Value}' WHERE id5='{dataGridView1.Rows[Convert.ToInt32(dataGridView1.SelectedCells[0].RowIndex.ToString())].Cells[0].Value}'";
+            string query2 = $"UPDATE woman_odejda SET name3='{dataGridView1[1, dataGridView1.CurrentRow.Index].Value}', number_tovar3='{dataGridView1[2, dataGridView1.CurrentRow.Index].Value}', price3='{dataGridView1[3, dataGridView1.CurrentRow.Index].Value}', kolichestvo3='{dataGridView1[4, dataGridView1.CurrentRow.Index].Value}', size3='{dataGridView1[5, dataGridView1.CurrentRow.Index].Value}' WHERE id3='{dataGridView1.Rows[Convert.ToInt32(dataGridView1.SelectedCells[0].RowIndex.ToString())].Cells[0].Value}'";
             // объект для выполнения SQL-запроса
             MySqlCommand command = new MySqlCommand(query2, Classes.DBConn.conn);
             // выполняем запрос
