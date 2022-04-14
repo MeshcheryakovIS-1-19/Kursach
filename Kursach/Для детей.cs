@@ -11,7 +11,7 @@ namespace Kursach
         {
             InitializeComponent();
         }
-        public static string request = "SELECT id AS 'Код товара', name AS 'Наименование товара', number_tovars AS 'Номер товара', price AS 'Цена товара', kolischestvo AS 'Количество тоавара' FROM dlya_detei ";
+        public static string request = "SELECT id AS 'Код товара', name AS 'Наименование товара', number_tovars AS 'Номер товара', price AS 'Цена товара', kolischestvo AS 'Количество тоавара', size AS 'Размер' FROM dlya_detei ";
         //Переменная для ID записи в БД, выбранной в гриде. Пока она не содержит значения, лучше его инициализировать с 0
         //что бы в БД не отправлялся null
         public static string id_selected_rows = "0";
@@ -36,7 +36,8 @@ namespace Kursach
             dataGridView1.Columns[2].FillWeight = 30;
             dataGridView1.Columns[3].FillWeight = 30;
             dataGridView1.Columns[4].FillWeight = 30;
-            
+            dataGridView1.Columns[5].FillWeight = 30;
+
             //Растягивание полей грида
             for (int i = 0; i < dataGridView1.Columns.Count; i++)
             {
@@ -97,8 +98,8 @@ namespace Kursach
         private void guna2Button2_Click(object sender, EventArgs e)
         {
 
-            string sql_update_current_stud = $"INSERT INTO dlya_detei (name, number_tovars, price, kolischestvo) " +
-                                            $"VALUES ('{naimenovanie.Text}', '{nomerTovara.Text}', '{price.Text}', '{kolichestvo.Text}')";
+            string sql_update_current_stud = $"INSERT INTO dlya_detei (name, number_tovars, price, kolischestvo, size ) " +
+                                            $"VALUES ('{naimenovanie.Text}', '{nomerTovara.Text}', '{price.Text}', '{kolichestvo.Text}', '{size.Text}' )";
 
             Classes.DBConn.NewRecord(sql_update_current_stud);
 
@@ -117,7 +118,7 @@ namespace Kursach
             // устанавливаем соединение с БД
             Classes.DBConn.conn.Open();
             // запрос обновления данных
-            string query2 = $"UPDATE dlya_detei SET name='{dataGridView1[1, dataGridView1.CurrentRow.Index].Value}', number_tovars='{dataGridView1[2, dataGridView1.CurrentRow.Index].Value}', price='{dataGridView1[3, dataGridView1.CurrentRow.Index].Value}', kolischestvo='{dataGridView1[4, dataGridView1.CurrentRow.Index].Value}' WHERE id='{dataGridView1.Rows[Convert.ToInt32(dataGridView1.SelectedCells[0].RowIndex.ToString())].Cells[0].Value}'";
+            string query2 = $"UPDATE dlya_detei SET name='{dataGridView1[1, dataGridView1.CurrentRow.Index].Value}', number_tovars='{dataGridView1[2, dataGridView1.CurrentRow.Index].Value}', price='{dataGridView1[3, dataGridView1.CurrentRow.Index].Value}', kolischestvo='{dataGridView1[4, dataGridView1.CurrentRow.Index].Value}', size='{dataGridView1[5, dataGridView1.CurrentRow.Index].Value}' WHERE id='{dataGridView1.Rows[Convert.ToInt32(dataGridView1.SelectedCells[0].RowIndex.ToString())].Cells[0].Value}'";
             // объект для выполнения SQL-запроса
             MySqlCommand command = new MySqlCommand(query2, Classes.DBConn.conn);
             // выполняем запрос

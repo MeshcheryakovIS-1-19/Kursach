@@ -52,7 +52,7 @@
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(617, 561);
+            this.dataGridView1.Size = new System.Drawing.Size(612, 613);
             this.dataGridView1.TabIndex = 26;
             this.dataGridView1.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEndEdit);
             this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
@@ -284,7 +284,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Kursach.Properties.Resources.LAJGL_EzFnQ1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(984, 572);
+            this.ClientSize = new System.Drawing.Size(1061, 609);
             this.Controls.Add(this.guna2Button5);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.guna2Button3);
