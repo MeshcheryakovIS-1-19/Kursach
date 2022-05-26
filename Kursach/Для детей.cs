@@ -109,7 +109,8 @@ namespace Kursach
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            Classes.DBConn.DeleteUser("DELETE FROM dlya_detei WHERE id='", id_selected_rows);
+            if (Classes.Auth.auth_doljnost == "Администратор")
+                Classes.DBConn.DeleteUser("DELETE FROM dlya_detei WHERE id='", id_selected_rows);
             Reload();
         }
 
